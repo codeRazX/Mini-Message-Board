@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="/style.css">
+    </head>
+  <body>
+    <h1>Mini Message Board</h1>
+
+    <a href="/new">New Message</a>
+    <ul class="list-messages">
+        <% messages.forEach(({ text, user, added,id }) => { %>
+          <li>
+            <p><%= "Message: " + text %></p>
+            <p><%= "User: " + user %></p>
+            <p><%= "Added: " + added.toLocaleString() %></p>
+            <a href="/details/<%= id %>">Show</a>
+          </li>
+        <% }) %>
+      </ul>
+  </body>
+</html>

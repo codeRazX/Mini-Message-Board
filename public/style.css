@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 32px 0;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    background-color: greenyellow;
+    padding: 12px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .list-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1200px;
+    width: 90%;
+    margin-top: 32px;
+  }
+  
+  .list-messages li {
+    font-weight: bold;
+    background-color: #CCC;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  form {
+    max-width: 400px;
+    width: 90%;
+    background-color: #E1E1E1;
+    box-shadow: 0 0 5px black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-field{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .form-button{
+    display: flex;
+  }
+
+  form label {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  form input {
+    padding: 5px;
+  }
+  
+  form button,
+  form a {
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+    border: none;
+  }
+  
+  form button {
+    background-color: greenyellow;
+    cursor: pointer;
+  }
+  
+  form a {
+    background-color: black;
+    color: white;
+  }
+  
