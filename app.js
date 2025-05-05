@@ -5,7 +5,7 @@ const indexRouter = require('./routes/indexRouter');
 const newRouter = require('./routes/newRouter');
 const detailsRouter = require('./routes/detailsRouter');
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.set('views', path.join(__dirname,'views'));
 app.set('view engine','ejs');
